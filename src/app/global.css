@@ -113,8 +113,15 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@font-face {
+  font-family: "Departure Mono";
+  src: url("/assets/font/DepartureMono-Regular.woff2") format("woff2");
+  font-feature-settings: "locl";
+}
+
 @layer base {
   * {
+    font-family: "Departure Mono", monospace;
     @apply border-border outline-ring/50;
   }
 
