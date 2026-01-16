@@ -52,7 +52,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #FF821E;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -126,6 +126,33 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
+  }
+
+  .mask-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    /* 基础蒙版设置 */
+    -webkit-mask-image:
+      linear-gradient(to right, black 2px, transparent 2px),
+      linear-gradient(to bottom, black 2px, transparent 2px);
+    mask-image:
+      linear-gradient(to right, black 2px, transparent 2px),
+      linear-gradient(to bottom, black 2px, transparent 2px);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+    -webkit-mask-size: 10px 10px;
+    mask-size: 10px 10px;
+
+    /* 初始隐藏，等待 LightRays 准备好 */
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+
+  /* 当 LightRays 准备好后添加此类，触发淡入 */
+  .mask-container.mask-visible {
+    opacity: 1;
   }
 }

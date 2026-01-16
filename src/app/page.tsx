@@ -5,11 +5,11 @@ import NewV3 from "@/components/sections/NewV3";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="flex flex-col mx-auto max-w-360">
       <Hero />
-      <Features />
+      {/* <Features />
       <NewV3 />
-      <Testimonials />
+      <Testimonials /> */}
     </div>
   );
 }
