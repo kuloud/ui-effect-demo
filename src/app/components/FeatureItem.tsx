@@ -1,7 +1,6 @@
 import Ellipse from "@/components/Ellipse";
 
 import Pattern from "@/assets/images/Pattern.svg";
-import { cn } from "@/lib/utils";
 
 export default function FeatureItem({
   index,
