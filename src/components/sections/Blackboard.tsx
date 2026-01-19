@@ -1,13 +1,14 @@
 import bento from "@/assets/images/frames/FrameBento.png";
 import CornersPlus from "@/components/CornersPlus";
+import DecryptedText from "@/components/DecryptedText";
 import Ellipse from "@/components/Ellipse";
 
 export default function Blackboard() {
   return (
-    <section className="w-full ">
+    <section className="w-full">
       <CornersPlus>
         <div
-          className="p-10 w-full bg-cover bg-center bg-no-repeat"
+          className="w-full bg-cover bg-center bg-no-repeat p-10"
           style={{ backgroundImage: `url(${bento})` }}
         >
           <div className="bg-[#121212]">
@@ -30,13 +31,19 @@ export default function Blackboard() {
               for distributed AI workloads across devices, continuously
               improving intelligence in real-time. */}
                 Brumes.aI defines a protocol
-                <br /> and a <span className="text-white">secure</span>{" "}
-                execution environment
-                <br /> for <span className="text-white">distributed</span> AI
+                <br /> and a{" "}
+                <DecryptedText text="secure" className="text-white" /> execution
+                environment
+                <br /> for{" "}
+                <DecryptedText text="distributed" className="text-white" /> AI
                 workloads across devices,
-                <br /> <span className="text-white">continuously</span>{" "}
+                <br />{" "}
+                <DecryptedText
+                  text="continuously"
+                  className="text-white"
+                />{" "}
                 improving intelligence in{" "}
-                <span className="text-white">real-time</span>.
+                <DecryptedText text="real-time" className="text-white" />.
               </p>
             </div>
           </div>

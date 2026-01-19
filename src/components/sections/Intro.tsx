@@ -4,6 +4,7 @@ import Variant1 from "@/assets/images/figure/Variant1.svg";
 import Variant2 from "@/assets/images/figure/Variant2.svg";
 
 import Pattern from "@/assets/images/Pattern.svg";
+import DecryptedText from "@/components/DecryptedText";
 
 export default function Intro() {
   return (
@@ -11,31 +12,26 @@ export default function Intro() {
       <CornersPlus>
         <div className="p-10">
           <p className="flex flex-col">
-            <span className="cross-card-content " style={{}}>
-              Pivotal distributed inference engine
-            </span>
+            <p className="cross-card-content">
+              <DecryptedText text="Pivotal distributed inference engine" />
+            </p>
             <span className="cross-card-desc text-[#686868]">
-              Lorem ipsum dolor sit amet consectetur. Eget tellus viverra tempor
-              egestas enim aliquet.
+              Scalable and efficient intelligence beyond centralized
+              infrastructure.
             </span>
           </p>
         </div>
       </CornersPlus>
       <CornersPlus showCorners="bottom">
         <div className="flex">
-          <div className=" flex-554 dashed-border-4-4-r">
+          <div className="dashed-border-4-4-r flex-554">
             <div className="p-10">
-              <p className="flex flex-col">
-                <span className="cross-card-content1 text-white " style={{}}>
-                  WASM protocol
-                </span>
-                <span className="cross-card-desc text-[#686868]">
-                  Lorem ipsum dolor sit amet consectetur. Eget tellus viverra
-                  tempor egestas enim aliquet.
-                </span>
-              </p>
+              <div className="cross-card-content1 flex items-baseline gap-2">
+                <span className="leading-prefix">//</span>
+                <DecryptedText text={"WASM protocol"} />
+              </div>
             </div>
-            <div className="p-4 relative">
+            <div className="relative p-4 flex flex-col items-center">
               <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-17"
                 style={{
@@ -45,19 +41,14 @@ export default function Intro() {
               <img src={Variant1} alt="" />
             </div>
           </div>
-          <div className=" flex-723">
+          <div className="flex-723">
             <div className="p-10">
-              <p className="flex flex-col">
-                <span className="cross-card-content1 text-white " style={{}}>
-                  P2P inference engine
-                </span>
-                <span className="cross-card-desc text-[#686868]">
-                  Lorem ipsum dolor sit amet consectetur. Eget tellus viverra
-                  tempor egestas enim aliquet.
-                </span>
-              </p>
+              <div className="cross-card-content1 flex items-baseline gap-2">
+                <span className="leading-prefix">//</span>
+                <DecryptedText text={"P2P inference engine"} />
+              </div>
             </div>
-            <div className="p-4 relative">
+            <div className="relative p-4 flex flex-col items-center">
               <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-17"
                 style={{
