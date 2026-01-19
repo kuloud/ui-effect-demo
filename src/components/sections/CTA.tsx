@@ -76,7 +76,7 @@ export default function CTA() {
       <PixelCard className="h-100 w-full border-none">
         <div className="absolute flex size-full items-center justify-center">
           <div className="flex flex-col items-center">
-            <p className="cta-logo">
+            <p className="cta-logo mb-10">
               <span>Brumes</span>
               <span className="text-primary">.</span>
               <span>ai</span>
@@ -84,7 +84,9 @@ export default function CTA() {
             <p className="cta-title">
               <DecryptedText text="Get actionable insights with us" />
             </p>
-            <p className="cta-desc">Power Your Devices with AI You Can Trust</p>
+            <p className="cta-desc text-[#686868]">
+              Power Your Devices with AI You Can Trust
+            </p>
 
             <div className="mt-10">
               <Button>Join the waitlist</Button>
